@@ -9,11 +9,11 @@ they should not take a lot of code and yet they should not limit you. Because
 of that, Flask has a few design choices that some people might find
 surprising or unorthodox. For example, Flask uses thread-local objects
 internally so that you don’t have to pass objects around from
-function to function within a request in order to stay threadsafe.
-This approach is convenient, but requires a valid
+function to function within a request to stay threadsafe.
+This approach is convenient but requires a valid
 request context for dependency injection or when attempting to reuse code which
 uses a value pegged to the request.  The Flask project is honest about
-thread-locals, does not hide them, and calls out in the code and documentation
+thread-locals do not hide them and call out in the code and documentation
 where they are used.
 
 Develop for the Web with Caution
